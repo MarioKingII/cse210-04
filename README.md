@@ -31,16 +31,16 @@ Enhanced game display, e.g. artifacts
 ## Project Structure
 The project files and folders are organized as follows:
 
-root                    (project root folder)
+root                 (project root folder)
 +-- rfk              (source code for game)
-  +-- game              (specific classes)
-  +-- __main__.py       (program entry point)
-+-- README.md           (general info)
+ +-- game            (specific classes)
+  +-- __main__.py    (program entry point)
++-- README.md        (general info)
 
 ## Required Technologies
 Python 3.8.0 or greater
 
 ## Authors
-Adrian Ruiz: (adrian_rb@byui.edu) 
-Mario Rengel: (mariogrr@byui.edu) 
+Adrian Ruiz: (adrian_rb@byui.edu)
+Mario Rengel: (mariogrr@byui.edu)
 Jon Lanenga: (lan21005@byui.edu) 
