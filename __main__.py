@@ -4,15 +4,11 @@ import random
 from game.casting.actor import Actor
 from game.casting.artifact import Artifact
 from game.casting.cast import Cast
-
 from game.directing.director import Director
-
 from game.services.keyboard_service import KeyboardService
 from game.services.video_service import VideoService
-
 from game.shared.color import Color
 from game.shared.point import Point
-
 
 FRAME_RATE = 12
 MAX_X = 900
@@ -21,10 +17,10 @@ CELL_SIZE = 15
 FONT_SIZE = 15
 COLS = 60
 ROWS = 40
-CAPTION = "Robot Finds Kitten"
+CAPTION = "GREED"
 DATA_PATH = os.path.dirname(os.path.abspath(__file__)) + "/data/messages.txt"
 WHITE = Color(255, 255, 255)
-DEFAULT_ARTIFACTS = 40
+DEFAULT_ARTIFACTS = 25
 
 
 def main():
@@ -62,7 +58,7 @@ def main():
         message = messages[n]
 
         x = random.randint(1, COLS - 1)
-        y = random.randint(1, ROWS - 1)
+        y = (0)
         position = Point(x, y)
         position = position.scale(CELL_SIZE)
 
@@ -84,7 +80,6 @@ def main():
     video_service = VideoService(CAPTION, MAX_X, MAX_Y, CELL_SIZE, FRAME_RATE)
     director = Director(keyboard_service, video_service)
     director.start_game(cast)
-
 
 if __name__ == "__main__":
     main()
